@@ -1,10 +1,10 @@
 (Project is aimed for use in Czech Republic, therefore description is in czech language only.)
-# shoptet-pojo-classes
-## Java třídy pro přípravu xml importu pro Shoptet
+# cz-ecommerce-java-classes
+## Java třídy pro přípravu xml feedu pro různé dodavatele a e-shopová řešení
 
-Tento projekt obsahuje základní třídy pro pohodlnou transformaci data od dodavatele pro Váš e-shop postavený na řešení od firmy Shoptet.
+###Shoptet
 
-###Použití
+####Použití
 ```java
 SHOP rootShop = new SHOP();
 List<SHOP.SHOPITEM> shopitem = rootShop.getSHOPITEM();
