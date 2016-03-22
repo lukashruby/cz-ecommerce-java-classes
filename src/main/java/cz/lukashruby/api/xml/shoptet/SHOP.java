@@ -451,26 +451,7 @@ public class SHOP {
             @XmlElement(name = "CODE")
             protected List<String> code;
 
-            /**
-             * Gets the value of the code property.
-             * <p>
-             * <p>
-             * This accessor method returns a reference to the live list,
-             * not a snapshot. Therefore any modification you make to the
-             * returned list will be present inside the JAXB object.
-             * This is why there is not a <CODE>set</CODE> method for the code property.
-             * <p>
-             * <p>
-             * For example, to add a new item, do as follows:
-             * <pre>
-             *    getCODE().add(newItem);
-             * </pre>
-             * <p>
-             * <p>
-             * <p>
-             * Objects of the following type(s) are allowed in the list
-             * {@link String }
-             */
+            
             public List<String> getCODE() {
                 if (code == null) {
                     code = new ArrayList<String>();
@@ -481,24 +462,7 @@ public class SHOP {
         }
 
 
-        /**
-         * <p>Java class for anonymous complex type.
-         * <p>
-         * <p>The following schema fragment specifies the expected content contained within this class.
-         * <p>
-         * <pre>
-         * &lt;complexType>
-         *   &lt;complexContent>
-         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *       &lt;sequence>
-         *         &lt;element name="AMOUNT" type="{http://www.w3.org/2001/XMLSchema}byte"/>
-         *         &lt;element name="MINIMAL_AMOUNT" type="{http://www.w3.org/2001/XMLSchema}byte"/>
-         *       &lt;/sequence>
-         *     &lt;/restriction>
-         *   &lt;/complexContent>
-         * &lt;/complexType>
-         * </pre>
-         */
+        
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
                 "amount",
@@ -511,30 +475,22 @@ public class SHOP {
             @XmlElement(name = "MINIMAL_AMOUNT")
             protected byte minimalamount;
 
-            /**
-             * Gets the value of the amount property.
-             */
+            
             public byte getAMOUNT() {
                 return amount;
             }
 
-            /**
-             * Sets the value of the amount property.
-             */
+            
             public void setAMOUNT(byte value) {
                 this.amount = value;
             }
 
-            /**
-             * Gets the value of the minimalamount property.
-             */
+            
             public byte getMINIMALAMOUNT() {
                 return minimalamount;
             }
 
-            /**
-             * Sets the value of the minimalamount property.
-             */
+            
             public void setMINIMALAMOUNT(byte value) {
                 this.minimalamount = value;
             }
@@ -542,34 +498,7 @@ public class SHOP {
         }
 
 
-        /**
-         * <p>Java class for anonymous complex type.
-         * <p>
-         * <p>The following schema fragment specifies the expected content contained within this class.
-         * <p>
-         * <pre>
-         * &lt;complexType>
-         *   &lt;complexContent>
-         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *       &lt;sequence>
-         *         &lt;element name="TEXT_PROPERTY" maxOccurs="unbounded" minOccurs="0">
-         *           &lt;complexType>
-         *             &lt;complexContent>
-         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *                 &lt;sequence>
-         *                   &lt;element name="NAME" type="{http://www.w3.org/2001/XMLSchema}string"/>
-         *                   &lt;element name="VALUE" type="{http://www.w3.org/2001/XMLSchema}string"/>
-         *                 &lt;/sequence>
-         *               &lt;/restriction>
-         *             &lt;/complexContent>
-         *           &lt;/complexType>
-         *         &lt;/element>
-         *       &lt;/sequence>
-         *     &lt;/restriction>
-         *   &lt;/complexContent>
-         * &lt;/complexType>
-         * </pre>
-         */
+        
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
                 "textproperty"
@@ -579,26 +508,7 @@ public class SHOP {
             @XmlElement(name = "TEXT_PROPERTY")
             protected List<TEXTPROPERTY> textproperty;
 
-            /**
-             * Gets the value of the textproperty property.
-             * <p>
-             * <p>
-             * This accessor method returns a reference to the live list,
-             * not a snapshot. Therefore any modification you make to the
-             * returned list will be present inside the JAXB object.
-             * This is why there is not a <CODE>set</CODE> method for the textproperty property.
-             * <p>
-             * <p>
-             * For example, to add a new item, do as follows:
-             * <pre>
-             *    getTEXTPROPERTY().add(newItem);
-             * </pre>
-             * <p>
-             * <p>
-             * <p>
-             * Objects of the following type(s) are allowed in the list
-             * {@link TEXTPROPERTY }
-             */
+            
             public List<TEXTPROPERTY> getTEXTPROPERTY() {
                 if (textproperty == null) {
                     textproperty = new ArrayList<TEXTPROPERTY>();
@@ -607,24 +517,7 @@ public class SHOP {
             }
 
 
-            /**
-             * <p>Java class for anonymous complex type.
-             * <p>
-             * <p>The following schema fragment specifies the expected content contained within this class.
-             * <p>
-             * <pre>
-             * &lt;complexType>
-             *   &lt;complexContent>
-             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-             *       &lt;sequence>
-             *         &lt;element name="NAME" type="{http://www.w3.org/2001/XMLSchema}string"/>
-             *         &lt;element name="VALUE" type="{http://www.w3.org/2001/XMLSchema}string"/>
-             *       &lt;/sequence>
-             *     &lt;/restriction>
-             *   &lt;/complexContent>
-             * &lt;/complexType>
-             * </pre>
-             */
+            
             @XmlAccessorType(XmlAccessType.FIELD)
             @XmlType(name = "", propOrder = {
                     "name",
@@ -637,42 +530,22 @@ public class SHOP {
                 @XmlElement(name = "VALUE", required = true)
                 protected String value;
 
-                /**
-                 * Gets the value of the name property.
-                 *
-                 * @return possible object is
-                 * {@link String }
-                 */
+                
                 public String getNAME() {
                     return name;
                 }
 
-                /**
-                 * Sets the value of the name property.
-                 *
-                 * @param value allowed object is
-                 *              {@link String }
-                 */
+                
                 public void setNAME(String value) {
                     this.name = value;
                 }
 
-                /**
-                 * Gets the value of the value property.
-                 *
-                 * @return possible object is
-                 * {@link String }
-                 */
+                
                 public String getVALUE() {
                     return value;
                 }
 
-                /**
-                 * Sets the value of the value property.
-                 *
-                 * @param value allowed object is
-                 *              {@link String }
-                 */
+                
                 public void setVALUE(String value) {
                     this.value = value;
                 }
@@ -682,63 +555,7 @@ public class SHOP {
         }
 
 
-        /**
-         * <p>Java class for anonymous complex type.
-         * <p>
-         * <p>The following schema fragment specifies the expected content contained within this class.
-         * <p>
-         * <pre>
-         * &lt;complexType>
-         *   &lt;complexContent>
-         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *       &lt;sequence>
-         *         &lt;element name="VARIANT" maxOccurs="unbounded" minOccurs="0">
-         *           &lt;complexType>
-         *             &lt;complexContent>
-         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *                 &lt;sequence>
-         *                   &lt;element name="CODE" type="{http://www.w3.org/2001/XMLSchema}string"/>
-         *                   &lt;element name="PARAMETERS">
-         *                     &lt;complexType>
-         *                       &lt;complexContent>
-         *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *                           &lt;sequence>
-         *                             &lt;element name="PARAMETER" maxOccurs="unbounded" minOccurs="0">
-         *                               &lt;complexType>
-         *                                 &lt;complexContent>
-         *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *                                     &lt;sequence>
-         *                                       &lt;element name="NAME" type="{http://www.w3.org/2001/XMLSchema}string"/>
-         *                                       &lt;element name="VALUE" type="{http://www.w3.org/2001/XMLSchema}string"/>
-         *                                     &lt;/sequence>
-         *                                   &lt;/restriction>
-         *                                 &lt;/complexContent>
-         *                               &lt;/complexType>
-         *                             &lt;/element>
-         *                           &lt;/sequence>
-         *                         &lt;/restriction>
-         *                       &lt;/complexContent>
-         *                     &lt;/complexType>
-         *                   &lt;/element>
-         *                   &lt;element name="EAN" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-         *                   &lt;element name="CURRENCY" type="{http://www.w3.org/2001/XMLSchema}string"/>
-         *                   &lt;element name="VAT" type="{http://www.w3.org/2001/XMLSchema}byte"/>
-         *                   &lt;element name="PRICE" type="{http://www.w3.org/2001/XMLSchema}float"/>
-         *                   &lt;element name="PURCHASE_PRICE" type="{http://www.w3.org/2001/XMLSchema}float"/>
-         *                   &lt;element name="STANDARD_PRICE" type="{http://www.w3.org/2001/XMLSchema}float"/>
-         *                   &lt;element name="PRICE_VAT" type="{http://www.w3.org/2001/XMLSchema}short"/>
-         *                   &lt;element name="AVAILABILITY" type="{http://www.w3.org/2001/XMLSchema}string"/>
-         *                 &lt;/sequence>
-         *               &lt;/restriction>
-         *             &lt;/complexContent>
-         *           &lt;/complexType>
-         *         &lt;/element>
-         *       &lt;/sequence>
-         *     &lt;/restriction>
-         *   &lt;/complexContent>
-         * &lt;/complexType>
-         * </pre>
-         */
+        
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
                 "variant"
@@ -748,26 +565,7 @@ public class SHOP {
             @XmlElement(name = "VARIANT")
             protected List<VARIANT> variant;
 
-            /**
-             * Gets the value of the variant property.
-             * <p>
-             * <p>
-             * This accessor method returns a reference to the live list,
-             * not a snapshot. Therefore any modification you make to the
-             * returned list will be present inside the JAXB object.
-             * This is why there is not a <CODE>set</CODE> method for the variant property.
-             * <p>
-             * <p>
-             * For example, to add a new item, do as follows:
-             * <pre>
-             *    getVARIANT().add(newItem);
-             * </pre>
-             * <p>
-             * <p>
-             * <p>
-             * Objects of the following type(s) are allowed in the list
-             * {@link VARIANT }
-             */
+            
             public List<VARIANT> getVARIANT() {
                 if (variant == null) {
                     variant = new ArrayList<VARIANT>();
@@ -780,53 +578,7 @@ public class SHOP {
             }
 
 
-            /**
-             * <p>Java class for anonymous complex type.
-             * <p>
-             * <p>The following schema fragment specifies the expected content contained within this class.
-             * <p>
-             * <pre>
-             * &lt;complexType>
-             *   &lt;complexContent>
-             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-             *       &lt;sequence>
-             *         &lt;element name="CODE" type="{http://www.w3.org/2001/XMLSchema}string"/>
-             *         &lt;element name="PARAMETERS">
-             *           &lt;complexType>
-             *             &lt;complexContent>
-             *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-             *                 &lt;sequence>
-             *                   &lt;element name="PARAMETER" maxOccurs="unbounded" minOccurs="0">
-             *                     &lt;complexType>
-             *                       &lt;complexContent>
-             *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-             *                           &lt;sequence>
-             *                             &lt;element name="NAME" type="{http://www.w3.org/2001/XMLSchema}string"/>
-             *                             &lt;element name="VALUE" type="{http://www.w3.org/2001/XMLSchema}string"/>
-             *                           &lt;/sequence>
-             *                         &lt;/restriction>
-             *                       &lt;/complexContent>
-             *                     &lt;/complexType>
-             *                   &lt;/element>
-             *                 &lt;/sequence>
-             *               &lt;/restriction>
-             *             &lt;/complexContent>
-             *           &lt;/complexType>
-             *         &lt;/element>
-             *         &lt;element name="EAN" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
-             *         &lt;element name="CURRENCY" type="{http://www.w3.org/2001/XMLSchema}string"/>
-             *         &lt;element name="VAT" type="{http://www.w3.org/2001/XMLSchema}byte"/>
-             *         &lt;element name="PRICE" type="{http://www.w3.org/2001/XMLSchema}float"/>
-             *         &lt;element name="PURCHASE_PRICE" type="{http://www.w3.org/2001/XMLSchema}float"/>
-             *         &lt;element name="STANDARD_PRICE" type="{http://www.w3.org/2001/XMLSchema}float"/>
-             *         &lt;element name="PRICE_VAT" type="{http://www.w3.org/2001/XMLSchema}short"/>
-             *         &lt;element name="AVAILABILITY" type="{http://www.w3.org/2001/XMLSchema}string"/>
-             *       &lt;/sequence>
-             *     &lt;/restriction>
-             *   &lt;/complexContent>
-             * &lt;/complexType>
-             * </pre>
-             */
+            
             @XmlAccessorType(XmlAccessType.FIELD)
             @XmlType(name = "", propOrder = {
                     "code",
@@ -863,205 +615,108 @@ public class SHOP {
                 @XmlElement(name = "AVAILABILITY", required = true)
                 protected String availability;
 
-                /**
-                 * Gets the value of the code property.
-                 *
-                 * @return possible object is
-                 * {@link String }
-                 */
+                
                 public String getCODE() {
                     return code;
                 }
 
-                /**
-                 * Sets the value of the code property.
-                 *
-                 * @param value allowed object is
-                 *              {@link String }
-                 */
+                
                 public void setCODE(String value) {
                     this.code = value;
                 }
 
-                /**
-                 * Gets the value of the parameters property.
-                 *
-                 * @return possible object is
-                 * {@link PARAMETERS }
-                 */
+                
                 public PARAMETERS getPARAMETERS() {
                     return parameters;
                 }
 
-                /**
-                 * Sets the value of the parameters property.
-                 *
-                 * @param value allowed object is
-                 *              {@link PARAMETERS }
-                 */
+                
                 public void setPARAMETERS(PARAMETERS value) {
                     this.parameters = value;
                 }
 
-                /**
-                 * Gets the value of the ean property.
-                 *
-                 * @return possible object is
-                 * {@link Long }
-                 */
+                
                 public Long getEAN() {
                     return ean;
                 }
 
-                /**
-                 * Sets the value of the ean property.
-                 *
-                 * @param value allowed object is
-                 *              {@link Long }
-                 */
+                
                 public void setEAN(Long value) {
                     this.ean = value;
                 }
 
-                /**
-                 * Gets the value of the currency property.
-                 *
-                 * @return possible object is
-                 * {@link String }
-                 */
+                
                 public String getCURRENCY() {
                     return currency;
                 }
 
-                /**
-                 * Sets the value of the currency property.
-                 *
-                 * @param value allowed object is
-                 *              {@link String }
-                 */
+                
                 public void setCURRENCY(String value) {
                     this.currency = value;
                 }
 
-                /**
-                 * Gets the value of the vat property.
-                 */
+                
                 public byte getVAT() {
                     return vat;
                 }
 
-                /**
-                 * Sets the value of the vat property.
-                 */
+                
                 public void setVAT(byte value) {
                     this.vat = value;
                 }
 
-                /**
-                 * Gets the value of the price property.
-                 */
+                
                 public BigDecimal getPRICE() {
                     return price;
                 }
 
-                /**
-                 * Sets the value of the price property.
-                 */
+                
                 public void setPRICE(BigDecimal value) {
                     this.price = value;
                 }
 
-                /**
-                 * Gets the value of the purchaseprice property.
-                 */
+                
                 public BigDecimal getPURCHASEPRICE() {
                     return purchaseprice;
                 }
 
-                /**
-                 * Sets the value of the purchaseprice property.
-                 */
+                
                 public void setPURCHASEPRICE(BigDecimal value) {
                     this.purchaseprice = value;
                 }
 
-                /**
-                 * Gets the value of the standardprice property.
-                 */
+                
                 public BigDecimal getSTANDARDPRICE() {
                     return standardprice;
                 }
 
-                /**
-                 * Sets the value of the standardprice property.
-                 */
+                
                 public void setSTANDARDPRICE(BigDecimal value) {
                     this.standardprice = value;
                 }
 
-                /**
-                 * Gets the value of the pricevat property.
-                 */
+                
                 public BigDecimal getPRICEVAT() {
                     return pricevat;
                 }
 
-                /**
-                 * Sets the value of the pricevat property.
-                 */
+                
                 public void setPRICEVAT(BigDecimal value) {
                     this.pricevat = value;
                 }
 
-                /**
-                 * Gets the value of the availability property.
-                 *
-                 * @return possible object is
-                 * {@link String }
-                 */
+                
                 public String getAVAILABILITY() {
                     return availability;
                 }
 
-                /**
-                 * Sets the value of the availability property.
-                 *
-                 * @param value allowed object is
-                 *              {@link String }
-                 */
+                
                 public void setAVAILABILITY(String value) {
                     this.availability = value;
                 }
 
 
-                /**
-                 * <p>Java class for anonymous complex type.
-                 * <p>
-                 * <p>The following schema fragment specifies the expected content contained within this class.
-                 * <p>
-                 * <pre>
-                 * &lt;complexType>
-                 *   &lt;complexContent>
-                 *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-                 *       &lt;sequence>
-                 *         &lt;element name="PARAMETER" maxOccurs="unbounded" minOccurs="0">
-                 *           &lt;complexType>
-                 *             &lt;complexContent>
-                 *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-                 *                 &lt;sequence>
-                 *                   &lt;element name="NAME" type="{http://www.w3.org/2001/XMLSchema}string"/>
-                 *                   &lt;element name="VALUE" type="{http://www.w3.org/2001/XMLSchema}string"/>
-                 *                 &lt;/sequence>
-                 *               &lt;/restriction>
-                 *             &lt;/complexContent>
-                 *           &lt;/complexType>
-                 *         &lt;/element>
-                 *       &lt;/sequence>
-                 *     &lt;/restriction>
-                 *   &lt;/complexContent>
-                 * &lt;/complexType>
-                 * </pre>
-                 */
+                
                 @XmlAccessorType(XmlAccessType.FIELD)
                 @XmlType(name = "", propOrder = {
                         "parameter"
@@ -1071,26 +726,7 @@ public class SHOP {
                     @XmlElement(name = "PARAMETER")
                     protected List<PARAMETER> parameter;
 
-                    /**
-                     * Gets the value of the parameter property.
-                     * <p>
-                     * <p>
-                     * This accessor method returns a reference to the live list,
-                     * not a snapshot. Therefore any modification you make to the
-                     * returned list will be present inside the JAXB object.
-                     * This is why there is not a <CODE>set</CODE> method for the parameter property.
-                     * <p>
-                     * <p>
-                     * For example, to add a new item, do as follows:
-                     * <pre>
-                     *    getPARAMETER().add(newItem);
-                     * </pre>
-                     * <p>
-                     * <p>
-                     * <p>
-                     * Objects of the following type(s) are allowed in the list
-                     * {@link PARAMETER }
-                     */
+                    
                     public List<PARAMETER> getPARAMETER() {
                         if (parameter == null) {
                             parameter = new ArrayList<PARAMETER>();
@@ -1099,24 +735,7 @@ public class SHOP {
                     }
 
 
-                    /**
-                     * <p>Java class for anonymous complex type.
-                     * <p>
-                     * <p>The following schema fragment specifies the expected content contained within this class.
-                     * <p>
-                     * <pre>
-                     * &lt;complexType>
-                     *   &lt;complexContent>
-                     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-                     *       &lt;sequence>
-                     *         &lt;element name="NAME" type="{http://www.w3.org/2001/XMLSchema}string"/>
-                     *         &lt;element name="VALUE" type="{http://www.w3.org/2001/XMLSchema}string"/>
-                     *       &lt;/sequence>
-                     *     &lt;/restriction>
-                     *   &lt;/complexContent>
-                     * &lt;/complexType>
-                     * </pre>
-                     */
+                    
                     @XmlAccessorType(XmlAccessType.FIELD)
                     @XmlType(name = "", propOrder = {
                             "name",
@@ -1129,42 +748,22 @@ public class SHOP {
                         @XmlElement(name = "VALUE", required = true)
                         protected String value;
 
-                        /**
-                         * Gets the value of the name property.
-                         *
-                         * @return possible object is
-                         * {@link String }
-                         */
+                        
                         public String getNAME() {
                             return name;
                         }
 
-                        /**
-                         * Sets the value of the name property.
-                         *
-                         * @param value allowed object is
-                         *              {@link String }
-                         */
+                        
                         public void setNAME(String value) {
                             this.name = value;
                         }
 
-                        /**
-                         * Gets the value of the value property.
-                         *
-                         * @return possible object is
-                         * {@link String }
-                         */
+                        
                         public String getVALUE() {
                             return value;
                         }
 
-                        /**
-                         * Sets the value of the value property.
-                         *
-                         * @param value allowed object is
-                         *              {@link String }
-                         */
+                        
                         public void setVALUE(String value) {
                             this.value = value;
                         }
