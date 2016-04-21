@@ -236,7 +236,7 @@ public class ObjectFactory {
     public JAXBElement<BigInteger> createWEIGHT(BigInteger value) {
         return new JAXBElement<BigInteger>(_WEIGHT_QNAME, BigInteger.class, null, value);
     }
-    
+
     @XmlElementDecl(namespace = "", name = "SYNCHRONISM")
     public JAXBElement<BigInteger> createSYNCHRONISM(BigInteger value) {
         return new JAXBElement<BigInteger>(_SYNCHRONISM_QNAME, BigInteger.class, null, value);
