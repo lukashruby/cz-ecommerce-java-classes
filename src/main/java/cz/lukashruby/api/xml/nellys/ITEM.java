@@ -1,6 +1,8 @@
 
 package cz.lukashruby.api.xml.nellys;
 
+import cz.lukashruby.api.xml.shoptet.adapters.CDataAdapter;
+
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import javax.xml.bind.annotation.XmlAccessType;
@@ -14,36 +16,36 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "name",
-    "id",
-    "idmain",
-    "code",
-    "ean",
-    "url",
-    "prices",
-    "pricesvat",
-    "deliverytime",
-    "available",
-    "duties",
-    "pricebuy",
-    "priceold",
-    "vat",
-    "quantity",
-    "lock",
-    "unit",
-    "weight",
-    "images",
-    "categories",
-    "categoryshort",
-    "params",
-    "producer",
-    "signs",
-    "perex",
-    "description",
-    "priority",
-    "synchronism",
-    "export",
-    "active"
+        "name",
+        "id",
+        "idmain",
+        "code",
+        "ean",
+        "url",
+        "prices",
+        "pricesvat",
+        "deliverytime",
+        "available",
+        "duties",
+        "pricebuy",
+        "priceold",
+        "vat",
+        "quantity",
+        "lock",
+        "unit",
+        "weight",
+        "images",
+        "categories",
+        "categoryshort",
+        "params",
+        "producer",
+        "signs",
+        "perex",
+        "description",
+        "priority",
+        "synchronism",
+        "export",
+        "active"
 })
 @XmlRootElement(name = "ITEM")
 public class ITEM {
@@ -105,6 +107,7 @@ public class ITEM {
     @XmlElement(name = "PEREX", required = true)
     protected String perex;
     @XmlElement(name = "DESCRIPTION", required = true)
+    @XmlJavaTypeAdapter(CDataAdapter.class)
     protected String description;
     @XmlElement(name = "PRIORITY", required = true)
     protected BigInteger priority;

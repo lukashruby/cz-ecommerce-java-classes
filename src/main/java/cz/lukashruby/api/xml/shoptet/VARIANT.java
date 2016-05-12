@@ -19,7 +19,8 @@ import java.util.List;
         "purchaseprice",
         "standardprice",
         "pricevat",
-        "availability"
+        "availability_in_stock",
+        "availability_out_of_stock"
 })
 public class VARIANT {
 
@@ -41,8 +42,10 @@ public class VARIANT {
     protected BigDecimal standardprice;
     @XmlElement(name = "PRICE_VAT")
     protected BigDecimal pricevat;
-    @XmlElement(name = "AVAILABILITY", required = true)
-    protected String availability;
+    @XmlElement(name = "AVAILABILITY_OUT_OF_STOCK")
+    protected String availability_out_of_stock;
+    @XmlElement(name = "AVAILABILITY_IN_STOCK")
+    protected String availability_in_stock;
 
 
     public String getCODE() {
@@ -135,13 +138,20 @@ public class VARIANT {
     }
 
 
-    public String getAVAILABILITY() {
-        return availability;
+    public String getAvailability_out_of_stock() {
+        return availability_out_of_stock;
     }
 
+    public void setAvailability_out_of_stock(String availability_out_of_stock) {
+        this.availability_out_of_stock = availability_out_of_stock;
+    }
 
-    public void setAVAILABILITY(String value) {
-        this.availability = value;
+    public String getAvailability_in_stock() {
+        return availability_in_stock;
+    }
+
+    public void setAvailability_in_stock(String availability_in_stock) {
+        this.availability_in_stock = availability_in_stock;
     }
 
 
