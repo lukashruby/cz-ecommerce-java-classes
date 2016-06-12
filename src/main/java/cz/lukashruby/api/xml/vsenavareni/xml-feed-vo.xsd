@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="SHOP">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="SHOPITEM"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SHOPITEM">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PRODUCT"/>
+        <xs:element ref="DESCRIPTION"/>
+        <xs:element ref="URL"/>
+        <xs:element ref="IMGURL"/>
+        <xs:element ref="PRICE_VO"/>
+        <xs:element ref="PRICE_VO_VAT"/>
+        <xs:element ref="PRICE"/>
+        <xs:element ref="PRICE_VAT"/>
+        <xs:element minOccurs="0" ref="MANUFACTURER"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="CATEGORYTEXT"/>
+        <xs:element ref="PRODUCTNO"/>
+        <xs:element ref="ITEM_ID"/>
+        <xs:element ref="EAN"/>
+        <xs:element ref="DELIVERY_DATE"/>
+        <xs:element ref="STORE_COUNT"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PRODUCT" type="xs:string"/>
+  <xs:element name="DESCRIPTION" type="xs:string"/>
+  <xs:element name="URL" type="xs:anyURI"/>
+  <xs:element name="IMGURL" type="xs:anyURI"/>
+  <xs:element name="PRICE_VO" type="xs:string"/>
+  <xs:element name="PRICE_VO_VAT" type="xs:integer"/>
+  <xs:element name="PRICE" type="xs:string"/>
+  <xs:element name="PRICE_VAT" type="xs:integer"/>
+  <xs:element name="MANUFACTURER" type="xs:string"/>
+  <xs:element name="CATEGORYTEXT" type="xs:string"/>
+  <xs:element name="PRODUCTNO" type="xs:string"/>
+  <xs:element name="ITEM_ID" type="xs:integer"/>
+  <xs:element name="EAN" type="xs:string"/>
+  <xs:element name="DELIVERY_DATE" type="xs:string"/>
+  <xs:element name="STORE_COUNT" type="xs:integer"/>
+</xs:schema>

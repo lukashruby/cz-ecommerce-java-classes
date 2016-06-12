@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="SHOP">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="HEADER"/>
+        <xs:element maxOccurs="unbounded" ref="SHOPITEM"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HEADER">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="CUSTOMER"/>
+        <xs:element ref="SUPPLIER"/>
+        <xs:element ref="GENERATED"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CUSTOMER">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="FULLNAME"/>
+        <xs:element ref="ID"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FULLNAME" type="xs:string"/>
+  <xs:element name="ID" type="xs:integer"/>
+  <xs:element name="SUPPLIER" type="xs:string"/>
+  <xs:element name="GENERATED" type="xs:dateTime"/>
+  <xs:element name="SHOPITEM">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PRODUCT"/>
+        <xs:element ref="DESCRIPTION"/>
+        <xs:element ref="URL"/>
+        <xs:element minOccurs="0" ref="EAN"/>
+        <xs:element ref="CATEGORYTEXT"/>
+        <xs:element ref="IMGURL"/>
+        <xs:element ref="MANUFACTURER"/>
+        <xs:element ref="PRICE"/>
+        <xs:element ref="PRICE_VAT"/>
+        <xs:element ref="VAT"/>
+        <xs:element ref="PRODUCT_SHOP_ID"/>
+        <xs:element ref="STOCK"/>
+        <xs:element ref="PRICE_MOC"/>
+        <xs:element ref="PRICE_VOC"/>
+        <xs:element ref="IS_B2C"/>
+        <xs:element ref="PRICE_B2C"/>
+        <xs:element minOccurs="0" ref="PIKTOGRAMY"/>
+        <xs:element ref="ZARUKA"/>
+        <xs:element ref="LOGISTIC_DATA"/>
+        <xs:element ref="DESCRIPTIONS"/>
+        <xs:element ref="PARAMETERS"/>
+        <xs:element minOccurs="0" ref="B2C_VARIANTS"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PRODUCT" type="xs:string"/>
+  <xs:element name="DESCRIPTION" type="xs:string"/>
+  <xs:element name="URL" type="xs:anyURI"/>
+  <xs:element name="EAN" type="xs:integer"/>
+  <xs:element name="CATEGORYTEXT" type="xs:string"/>
+  <xs:element name="IMGURL" type="xs:anyURI"/>
+  <xs:element name="MANUFACTURER" type="xs:string"/>
+  <xs:element name="PRICE" type="xs:decimal"/>
+  <xs:element name="PRICE_VAT" type="xs:decimal"/>
+  <xs:element name="VAT" type="xs:decimal"/>
+  <xs:element name="PRODUCT_SHOP_ID" type="xs:string"/>
+  <xs:element name="STOCK" type="xs:integer"/>
+  <xs:element name="PRICE_MOC" type="xs:decimal"/>
+  <xs:element name="PRICE_VOC" type="xs:decimal"/>
+  <xs:element name="IS_B2C" type="xs:string"/>
+  <xs:element name="PRICE_B2C" type="xs:decimal"/>
+  <xs:element name="PIKTOGRAMY" type="xs:string"/>
+  <xs:element name="ZARUKA">
+    <xs:complexType mixed="true">
+      <xs:attribute name="MONTHS" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LOGISTIC_DATA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pocet_ks_subkar"/>
+        <xs:element ref="pocet_ks_kar"/>
+        <xs:element ref="pocet_ks_vrstva"/>
+        <xs:element ref="pocet_ks_paleta"/>
+        <xs:element ref="rozm_delka_ks_cm"/>
+        <xs:element ref="rozm_hloubka_ks_cm"/>
+        <xs:element ref="rozm_vyska_ks_cm"/>
+        <xs:element ref="hmot_vaha_netto_ks_g"/>
+        <xs:element ref="hmot_vaha_brutto_ks_g"/>
+        <xs:element ref="hmot_vaha_subkar_g"/>
+        <xs:element ref="hmot_vaha_kar_g"/>
+        <xs:element ref="hmot_vaha_vrstva_g"/>
+        <xs:element ref="hmot_vaha_paleta_g"/>
+        <xs:element ref="rozm_delka_subkar_cm"/>
+        <xs:element ref="rozm_hloubka_subkar_cm"/>
+        <xs:element ref="rozm_vyska_subkar_cm"/>
+        <xs:element ref="rozm_delka_kar_cm"/>
+        <xs:element ref="rozm_hloubka_kar_cm"/>
+        <xs:element ref="rozm_vyska_kar_cm"/>
+        <xs:element ref="rozm_delka_vrstva_cm"/>
+        <xs:element ref="rozm_hloubka_vrstva_cm"/>
+        <xs:element ref="rozm_vyska_vrstva_cm"/>
+        <xs:element ref="rozm_delka_paleta_cm"/>
+        <xs:element ref="rozm_hloubka_paleta_cm"/>
+        <xs:element ref="rozm_vyska_paleta_cm"/>
+        <xs:element ref="pocet_kar_vrstva"/>
+        <xs:element ref="pocet_vrstva_paleta"/>
+        <xs:element ref="pocet_kar_paleta"/>
+        <xs:element ref="pocet_subkar_kar"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="pocet_ks_subkar" type="xs:integer"/>
+  <xs:element name="pocet_ks_kar" type="xs:integer"/>
+  <xs:element name="pocet_ks_vrstva" type="xs:integer"/>
+  <xs:element name="pocet_ks_paleta" type="xs:integer"/>
+  <xs:element name="rozm_delka_ks_cm" type="xs:decimal"/>
+  <xs:element name="rozm_hloubka_ks_cm" type="xs:decimal"/>
+  <xs:element name="rozm_vyska_ks_cm" type="xs:decimal"/>
+  <xs:element name="hmot_vaha_netto_ks_g" type="xs:decimal"/>
+  <xs:element name="hmot_vaha_brutto_ks_g" type="xs:decimal"/>
+  <xs:element name="hmot_vaha_subkar_g" type="xs:decimal"/>
+  <xs:element name="hmot_vaha_kar_g" type="xs:decimal"/>
+  <xs:element name="hmot_vaha_vrstva_g" type="xs:decimal"/>
+  <xs:element name="hmot_vaha_paleta_g" type="xs:decimal"/>
+  <xs:element name="rozm_delka_subkar_cm" type="xs:decimal"/>
+  <xs:element name="rozm_hloubka_subkar_cm" type="xs:decimal"/>
+  <xs:element name="rozm_vyska_subkar_cm" type="xs:decimal"/>
+  <xs:element name="rozm_delka_kar_cm" type="xs:decimal"/>
+  <xs:element name="rozm_hloubka_kar_cm" type="xs:decimal"/>
+  <xs:element name="rozm_vyska_kar_cm" type="xs:decimal"/>
+  <xs:element name="rozm_delka_vrstva_cm" type="xs:decimal"/>
+  <xs:element name="rozm_hloubka_vrstva_cm" type="xs:decimal"/>
+  <xs:element name="rozm_vyska_vrstva_cm" type="xs:decimal"/>
+  <xs:element name="rozm_delka_paleta_cm" type="xs:decimal"/>
+  <xs:element name="rozm_hloubka_paleta_cm" type="xs:decimal"/>
+  <xs:element name="rozm_vyska_paleta_cm" type="xs:decimal"/>
+  <xs:element name="pocet_kar_vrstva" type="xs:integer"/>
+  <xs:element name="pocet_vrstva_paleta" type="xs:integer"/>
+  <xs:element name="pocet_kar_paleta" type="xs:integer"/>
+  <xs:element name="pocet_subkar_kar" type="xs:integer"/>
+  <xs:element name="DESCRIPTIONS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="LONG"/>
+        <xs:element ref="SHORT"/>
+        <xs:element ref="NAME"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LONG">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="LONGLANG"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LONGLANG">
+    <xs:complexType mixed="true">
+      <xs:attribute name="LANG" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SHORT">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="SHORTLANG"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SHORTLANG">
+    <xs:complexType>
+      <xs:attribute name="LANG" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PARAMETERS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="PARAMETER"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PARAMETER">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="NAME"/>
+        <xs:element ref="VALUE"/>
+      </xs:sequence>
+      <xs:attribute name="CODE" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="B2C_VARIANTS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="VARIANT"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VARIANT">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PROPERTY"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PROPERTY">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="NAME"/>
+        <xs:element ref="VALUE"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NAME">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="GOLDLANG"/>
+        <xs:element ref="NAMELANG"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GOLDLANG">
+    <xs:complexType mixed="true">
+      <xs:attribute name="LANG" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NAMELANG">
+    <xs:complexType mixed="true">
+      <xs:attribute name="LANG" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VALUE" type="xs:string"/>
+</xs:schema>
