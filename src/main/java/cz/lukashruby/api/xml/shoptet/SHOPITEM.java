@@ -5,8 +5,6 @@ import cz.lukashruby.api.xml.shoptet.adapters.CDataAdapter;
 import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.List;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
@@ -38,6 +36,7 @@ import java.util.List;
         "availability_in_stock",
         "variants"
 })
+@XmlRootElement
 public class SHOPITEM {
 
     @XmlElement(name = "NAME", required = true)
@@ -46,7 +45,6 @@ public class SHOPITEM {
     protected String xmlFeedName;
     @XmlElement(name = "SHORT_DESCRIPTION", required = true)
     protected String shortdescription;
-    @XmlJavaTypeAdapter(value = CDataAdapter.class)
     @XmlElement(name = "DESCRIPTION", required = true)
     protected String description;
     @XmlElement(name = "MANUFACTURER", required = true)
@@ -312,8 +310,6 @@ public class SHOPITEM {
     public void setVARIANTS(VARIANTS value) {
         this.variants = value;
     }
-
-
 
 
 }
