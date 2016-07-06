@@ -1,11 +1,7 @@
 
 package cz.lukashruby.api.xml.shoptet;
 
-import cz.lukashruby.api.xml.shoptet.adapters.CDataAdapter;
-
 import javax.xml.bind.annotation.*;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
-import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,7 +26,6 @@ public class SHOP {
     public void setShopitem(List<SHOPITEM> shopitem) {
         this.shopitem = shopitem;
     }
-
 
 
 }
