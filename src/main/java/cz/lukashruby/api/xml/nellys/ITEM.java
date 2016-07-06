@@ -1,18 +1,11 @@
 
 package cz.lukashruby.api.xml.nellys;
 
-import cz.lukashruby.api.xml.shoptet.adapters.CDataAdapter;
-
-import java.math.BigDecimal;
-import java.math.BigInteger;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import java.math.BigDecimal;
+import java.math.BigInteger;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
@@ -107,7 +100,6 @@ public class ITEM {
     @XmlElement(name = "PEREX", required = true)
     protected String perex;
     @XmlElement(name = "DESCRIPTION", required = true)
-    @XmlJavaTypeAdapter(CDataAdapter.class)
     protected String description;
     @XmlElement(name = "PRIORITY", required = true)
     protected BigInteger priority;
