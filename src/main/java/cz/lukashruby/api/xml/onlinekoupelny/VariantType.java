@@ -27,7 +27,7 @@ public class VariantType {
     @XmlElement(name = "Stock", required = true)
     protected String stock;
     @XmlElement(name = "StockCount")
-    protected byte stockCount;
+    protected String stockCount;
     @XmlElement(name = "Delivery")
     protected byte delivery;
     @XmlElement(name = "ModifiedAt", required = true)
@@ -115,12 +115,12 @@ public class VariantType {
     }
 
 
-    public byte getStockCount() {
+    public String getStockCount() {
         return this.stockCount;
     }
 
 
-    public void setStockCount(byte value) {
+    public void setStockCount(String value) {
         this.stockCount = value;
     }
 
@@ -154,9 +154,3 @@ public class VariantType {
         this.removed = value;
     }
 }
-
-
-/* Location:              C:\Users\Lukáš\Downloads\online-koupelny-feeder-war.zip!\WEB-INF\classes\cz\lukashruby\dopo\onlinekoupelnyFeeder\xml\classes\onlinekoupelny\VariantType.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       0.7.1
- */
