@@ -1,6 +1,8 @@
 package cz.lukashruby.api.xml.rappa;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.ToString;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -37,6 +39,8 @@ import java.util.List;
         "colors"
 })
 @Data
+@Getter
+@Setter
 @ToString
 public class Item {
 

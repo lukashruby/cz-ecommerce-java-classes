@@ -1,7 +1,9 @@
 package cz.lukashruby.api.xml.rappa;
 
-import javax.xml.bind.JAXBElement;
-import javax.xml.bind.annotation.*;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlType;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,8 +13,7 @@ import java.util.List;
 })
 public class Images {
 
-    @XmlElementRef(name = "IMAGE", type = JAXBElement.class, required = false)
-    @XmlMixed
+    @XmlElement(name = "IMAGE", required = false)
     protected List<String> content;
 
     public List<String> getContent() {
