@@ -4,6 +4,7 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -45,13 +46,13 @@ public class Item {
     @XmlElement(name = "KOD", required = true)
     protected String kod;
     @XmlElement(name = "PRICE", required = true)
-    protected String price;
+    protected BigDecimal price;
     @XmlElement(name = "PRICE_VAT", required = true)
-    protected String pricevat;
+    protected BigDecimal pricevat;
     @XmlElement(name = "PRICEVO", required = true)
-    protected String pricevo;
+    protected BigDecimal pricevo;
     @XmlElement(name = "PRICEVO_VAT", required = true)
-    protected String pricevovat;
+    protected BigDecimal pricevovat;
     @XmlElement(name = "IMGURL", required = true)
     protected String imgurl;
     @XmlElement(name = "CATEGORYTEXT")
@@ -119,35 +120,35 @@ public class Item {
         this.kod = value;
     }
 
-    public String getPRICE() {
+    public BigDecimal getPRICE() {
         return price;
     }
 
-    public void setPRICE(String value) {
+    public void setPRICE(BigDecimal value) {
         this.price = value;
     }
 
-    public String getPRICEVAT() {
+    public BigDecimal getPRICEVAT() {
         return pricevat;
     }
 
-    public void setPRICEVAT(String value) {
+    public void setPRICEVAT(BigDecimal value) {
         this.pricevat = value;
     }
 
-    public String getPRICEVO() {
+    public BigDecimal getPRICEVO() {
         return pricevo;
     }
 
-    public void setPRICEVO(String value) {
+    public void setPRICEVO(BigDecimal value) {
         this.pricevo = value;
     }
 
-    public String getPRICEVOVAT() {
+    public BigDecimal getPRICEVOVAT() {
         return pricevovat;
     }
 
-    public void setPRICEVOVAT(String value) {
+    public void setPRICEVOVAT(BigDecimal value) {
         this.pricevovat = value;
     }
 
