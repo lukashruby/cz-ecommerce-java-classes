@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="myshop" type="myshopType"/>
+  <xs:complexType name="categoryType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="title"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="cat_id" use="optional"/>
+    <xs:attribute type="xs:string" name="parent_id" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="categoriesType">
+    <xs:sequence>
+      <xs:element type="categoryType" name="category" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="itemType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="title"/>
+      <xs:element type="xs:string" name="serial_num"/>
+      <xs:element type="xs:string" name="ean"/>
+      <xs:element type="xs:string" name="category"/>
+      <xs:element type="xs:string" name="price_recommend"/>
+      <xs:element type="xs:string" name="price_wholesale"/>
+      <xs:element type="xs:string" name="price_wholesale_vat"/>
+      <xs:element type="xs:string" name="price"/>
+      <xs:element name="discount">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="15"/>
+            <xs:enumeration value="25"/>
+            <xs:enumeration value="10"/>
+            <xs:enumeration value="7"/>
+            <xs:enumeration value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="min_pack"/>
+      <xs:element type="xs:string" name="max_pack"/>
+      <xs:element type="xs:string" name="in_stock"/>
+      <xs:element type="xs:string" name="vat"/>
+      <xs:element type="xs:string" name="description"/>
+      <xs:element type="xs:string" name="image"/>
+      <xs:element type="xs:string" name="thumb"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="pid" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="myshopType">
+    <xs:sequence>
+      <xs:element type="categoriesType" name="categories"/>
+      <xs:element type="itemsType" name="items"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="itemsType">
+    <xs:sequence>
+      <xs:element type="itemType" name="item" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
