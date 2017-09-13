@@ -1,4 +1,4 @@
-package cz.lukashruby.api.xml.lamphracky;
+package cz.lukashruby.api.xml.lampshracky;
 
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlElementDecl;
