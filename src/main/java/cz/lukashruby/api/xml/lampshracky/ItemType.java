@@ -11,6 +11,7 @@ import javax.xml.bind.annotation.*;
         "serialNum",
         "ean",
         "category",
+        "category_sub",
         "priceRecommend",
         "priceWholesale",
         "priceWholesaleVat",
@@ -33,6 +34,8 @@ public class ItemType {
     protected String serialNum;
     @XmlElement(required = true)
     protected String ean;
+    @XmlElement(name = "category_sub", required = true)
+    protected String categorySub;
     @XmlElement(required = true)
     protected String category;
     @XmlElement(name = "price_recommend", required = true)
